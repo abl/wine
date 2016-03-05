@@ -5026,8 +5026,8 @@ HRESULT CDECL wined3d_get_device_caps(const struct wined3d *wined3d, UINT adapte
                            WINED3DPBLENDCAPS_SRCCOLOR        |
                            WINED3DPBLENDCAPS_ZERO;
 
-    if (gl_info->supported[ARB_BLEND_FUNC_EXTENDED])
-        caps->DestBlendCaps |= WINED3DPBLENDCAPS_SRCALPHASAT;
+    // if (gl_info->supported[ARB_BLEND_FUNC_EXTENDED])
+    caps->DestBlendCaps |= WINED3DPBLENDCAPS_SRCALPHASAT;
 
     if (gl_info->supported[EXT_BLEND_COLOR])
     {
